@@ -1,0 +1,109 @@
+
+body {
+    background: #ffffff;
+    color: #808080;
+    font-family: 'Iranian Sans', Tahoma, sans-serif;
+    height: 100%;
+    font-size: 14px;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration:none;
+    color: #333333;
+}
+
+a:hover {
+    color: #DB1010;
+}
+
+/* IDs */
+
+#container {
+    padding: 10px 0 30px;
+}
+
+#page {
+    /*background: #E5E5E5;*/
+    margin: 0 auto;
+    min-height: 500px;
+    width: 1002px;
+}
+
+#top {
+    height: 80px;
+    padding: 0 0 5px 5px;
+    position: relative;
+    z-index: 200;
+}
+
+#logo {
+    padding: 0 0;
+}
+
+#top-menu {
+    padding: 30px 19px 0;
+    width: 440px;
+}
+
+#top-menu ul {
+    list-style: none outside none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#top-menu ul li {
+	position: relative;
+	z-index: 99;
+	display: inline;
+	margin: 0 15px 0;
+}
+
+#main {
+	background: #E5E5E5;
+	background-color: transparet;
+}
+
+#top-slider {
+	background-image: url('bg-slide.png');
+	background-repeat:no-repeat;
+	min-height: 419px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	vertical-align: baseline;
+}
+
+/* Classes */
+
+.curved-top {
+    border-radius: 5px 5px 0 0;
+    position: relative;
+}
+
+.curved-box {
+	background:#FF7B61;
+	padding: 5px 10px;
+	-moz-box-shadow: 5px 5px 5px #888888; /* Firefox 3.6 and earlier */
+	box-shadow: 5px 5px 5px #888888;
+	border-radius:8px;
+	-moz-border-radius:8px; /* Firefox 3.6 and earlier */
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+
+
+
+
+
+

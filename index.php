@@ -36,7 +36,7 @@ along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
             function makeButtons() {
                 console.log($( "ul[class=mainMenu] a" ).button());
                 $( "ul[class=mainMenu] a" ).click(function() { return false; });
-                
+            }
 	</script>
         
         <title>Mashhad LUG</title>

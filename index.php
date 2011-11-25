@@ -24,7 +24,7 @@ along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link type="text/css" rel="stylesheet" href="css/style.css" />
-        <link type="text/css" href="css/smoothness/jquery-ui-1.8.16.custom.css" rel="Stylesheet" />
+        <link type="text/css" href="css/jquery-ui-1.8.16.custom.css" rel="Stylesheet" />
         <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
         
@@ -36,8 +36,7 @@ along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
             function makeButtons() {
                 console.log($( "ul[class=mainMenu] a" ).button());
                 $( "ul[class=mainMenu] a" ).click(function() { return false; });
-            }
-        
+                
 	</script>
         
         <title>Mashhad LUG</title>

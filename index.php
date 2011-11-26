@@ -75,7 +75,7 @@ along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
                         </div>
                     </blockquote>
                     
-                    <div  id="wraper" class="curved-bottom">
+                    <div  id="wrapper" class="curved-bottom">
                         <div id="sidebar" class="float-right grids">
                             
                         </div>

@@ -67,7 +67,7 @@ h3 {
 
 #container {
     background: url('../images/bg-top.png') no-repeat scroll;
-    padding: 0px 0 30px;
+    padding: 0 0 0;
 }
 
 #page {

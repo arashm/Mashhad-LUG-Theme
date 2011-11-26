@@ -27,18 +27,19 @@ along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
         <link type="text/css" href="css/jquery-ui-1.8.16.custom.css" rel="Stylesheet" />
         <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
-        
+
         <script>
             $("document").ready(function() {
                 makeButtons();
+                $('#tabs').tabs();
             });
             
             function makeButtons() {
                 console.log($( "ul[class=mainMenu] a" ).button());
                 $( "ul[class=mainMenu] a" ).click(function() { return false; });
             }
-	</script>
-        
+        </script>
+
         <title>Mashhad LUG</title>
     </head>
     <body>
@@ -67,26 +68,42 @@ along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
                             </div>
                         </div>
                     </div>
-                    
+
                     <blockquote id="quote">
                         <h1>تاریخ اینچنین نشان داده است، برای آزادی‌تان ارزش قائل باشید در غیر اینصورت از دست خواهید دادش.</h1>
                         <div class="owner">
                             <p>ریچارد استالمن</p>
                         </div>
                     </blockquote>
-                    
+
                     <div  id="wrapper" class="curved-bottom">
                         <div id="sidebar" class="float-right grids">
-                            
+
                         </div>
                         <div id="content" class="float-left grids">
-                                
+                            
+                            <div id="tabs">
+                                <ul>
+                                    <li><a href="#tabs-1">جلسه بعد</a></li>
+                                    <li><a href="#tabs-2">گزارش جلسات</a></li>
+                                </ul>
+                                <div id="tabs-1">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                                <div id="tabs-2">
+                                    Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet 
+                                    ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
             <div id="footer">
-                    
+
             </div>
         </div>
 

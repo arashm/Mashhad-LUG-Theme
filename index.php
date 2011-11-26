@@ -44,7 +44,7 @@ along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
     <body>
 
         <div id="container">
-            <div id="page">
+            <div id="page" class="curved-bottom">
                 <div id="top">
                     <div id="logo" class="float-right">
                         <img src="images/MashhadLUGtop.png" alt=""></img>
@@ -75,7 +75,18 @@ along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
                         </div>
                     </blockquote>
                     
+                    <div  id="wraper">
+                        <div id="sidebar" class="float-right grids">
+                            
+                        </div>
+                        <div id="content" class="float-left grids">
+                                
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div id="footer">
+                    
             </div>
         </div>
 

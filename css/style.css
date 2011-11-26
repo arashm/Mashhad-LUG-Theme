@@ -85,6 +85,7 @@ h3 {
 }
 
 #logo {
+    margin-top: 7px;
     padding: 0 0;
 }
 
@@ -135,6 +136,28 @@ h3 {
 /*    display: block;*/
 }
 
+#wraper {
+    width: 100%;
+    min-height: 800px;
+    overflow: hidden;
+}
+
+#sidebar {
+    width: 300px;
+    min-height: 400px;
+}
+
+#content {
+    width: 640px;
+    min-height: 400px;
+}
+
+#footer {
+    background-color: #2e2e2e;
+    color: #d3d3d3;
+    padding: 75px 0 65px 0;
+}
+
 /* selctors */
 
 ul[class=mainMenu] li {
@@ -183,3 +206,8 @@ ul[class=mainMenu] li {
     background: rgba(254, 254, 254, 0.3);
 }
 
+.grids {
+    position: relative;
+    display: inline;
+    margin: 5px;
+}

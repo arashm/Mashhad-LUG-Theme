@@ -194,7 +194,7 @@ h3[class=box-title] {
 }
 
 #box-wrapper:first-child {
-    margin-top: 0 !important;
+    margin-top: 3px !important;
 }
 /* Classes */
 

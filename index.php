@@ -139,6 +139,7 @@ along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
                                 <ul>
                                     <li><a href="#tabs-1">جلسه بعد</a></li>
                                     <li><a href="#tabs-2">گزارش جلسات</a></li>
+                                    <li><a href="#tabs-3">رویدادهای پیش رو</a></li>
                                 </ul>
                                 <div id="tabs-1">
                                     <img src="images/map.jpeg"></img>
@@ -146,6 +147,9 @@ along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
                                 <div id="tabs-2">
                                     Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet 
                                     ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.
+                                </div>
+                                <div id="tabs-3">
+                                    سمینار دانشگاه خیام
                                 </div>
                             </div>
 

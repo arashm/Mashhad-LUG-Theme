@@ -32,6 +32,10 @@ along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
             $("document").ready(function() {
                 makeButtons();
                 $('#tabs').tabs();
+                $('span[id=icons]').hover(
+                function() { $(this).addClass('ui-state-hover'); }, 
+                function() { $(this).removeClass('ui-state-hover'); }
+            );
             });
             
             function makeButtons() {
@@ -77,27 +81,74 @@ along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
                     </blockquote>
 
                     <div  id="wrapper" class="curved-bottom">
+                        <!-- Sidebar -->
                         <div id="sidebar" class="float-right grids">
-
-                        </div>
-                        <div id="content" class="float-left grids">
                             
+                            <!--box1-->
+                            
+                            <div id="box-wrapper" class="curved-top curved-bottom transparent">
+                                <div id="box-title">
+                                    <div id="icons" class="ui-icon ui-icon-help ui-state-default ui-corner-all"></div>
+                                    <h3 class="box-title">راهنمایی</h3>
+                                </div>
+                                
+                                <div id="box-content">
+                                    <span class="content">اگر به‌تازگی با لینوکس و مشهد لاگ آشنا شده‌اید اینجا را مشاهده کنید.</span>
+                                </div>
+                            </div>
+                            <!--box2-->
+                            <div id="box-wrapper" class="curved-top curved-bottom transparent">
+                                <div id="box-title">
+                                    <div id="icons" class="ui-icon ui-icon-comment ui-state-default ui-corner-all"></div>
+                                    <h3 class="box-title">پیامک</h3>
+                                </div>
+                                
+                                <div id="box-content">
+                                    <span class="content">چناچه مایلید روزهای تشکیل جلسات را از طریق پیامک دریافت کنید، شماره تلفن همراه خود را وارد کنید:</span>
+                                </div>
+                            </div>
+                            <!--box3-->
+                            <div id="box-wrapper" class="curved-top curved-bottom transparent">
+                                <div id="box-title">
+                                    <div id="icons" class="ui-icon ui-icon-mail-closed ui-state-default ui-corner-all"></div>
+                                    <h3 class="box-title">عضویت در لیست پستی</h3>
+                                </div>
+                                
+                                <div id="box-content">
+                                    <span class="content">ما در لیست‌پستی درباره‌ی مسائل و جلسات لاگ گفتگو میکنیم. چناچه مایلید در این بحث‌ها شرکت داشته باشید، پست‌الکترونیکی خود را وارد کنید:</span>
+                                </div>
+                            </div>
+                            <!--box4-->
+                            <div id="box-wrapper" class="curved-top curved-bottom transparent">
+                                <div id="box-title">
+                                    <div id="icons" class="ui-icon ui-icon-star ui-state-default ui-corner-all"></div>
+                                    <h3 class="box-title">پشتیبانی</h3>
+                                </div>
+                                
+                                <div id="box-content">
+                                    <span class="content">شما می‌توانید به شکل‌های گوناگون به لاگ کمک کنید تا بتوانیم خدمات خود را بصورت رایگان و مداوم ارائه کنیم. برای اطلاعات بیشتر اینجا را مشاهده کنید.</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+               
+                        
+                        <div id="content" class="float-left grids">
+
                             <div id="tabs">
                                 <ul>
                                     <li><a href="#tabs-1">جلسه بعد</a></li>
                                     <li><a href="#tabs-2">گزارش جلسات</a></li>
                                 </ul>
                                 <div id="tabs-1">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    <img src="images/map.jpeg"></img>
                                 </div>
                                 <div id="tabs-2">
                                     Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet 
                                     ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>

@@ -149,6 +149,27 @@ h3 {
     min-height: 400px;
 }
 
+#box-wrapper {
+    border: 1px solid #aaaaaa;
+    min-height: 120px;
+    margin: 15px 0 15px;
+}
+
+#box-title {
+    padding: 10px;
+    border-bottom: 1px solid #aaaaaa;
+    display: block;
+    margin: 0 15px 0;
+}
+
+#box-content {
+    margin: 15px;
+}
+
+#icons {
+    display: inline-block;
+}
+
 #content {
     width: 620px;
     min-height: 400px;
@@ -167,6 +188,14 @@ ul[class=mainMenu] li {
     display: inline;
 }
 
+h3[class=box-title] {
+    display: inline;
+    padding: 0 5px 0;
+}
+
+#box-wrapper:first-child {
+    margin-top: 0 !important;
+}
 /* Classes */
 
 .curved-top {
@@ -213,3 +242,7 @@ ul[class=mainMenu] li {
     display: inline;
     margin: 30px 5px 15px;
 }
+
+/*.content {
+    margin: 10px;
+}*/

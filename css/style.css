@@ -18,7 +18,8 @@ along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
 */
 
 body {
-    background: #F5F5F5;
+/*    background: #F5F5F5;*/
+    background: #b9b9b9;
     color: #363636;
     font-family: 'Iranian Sans', Tahoma, sans-serif;
     height: 100%;
@@ -66,12 +67,12 @@ h3 {
 /* IDs */
 
 #container {
-    background: url('../images/bg-top.png') no-repeat scroll;
+    /*    background: url('../images/bg-top.png') no-repeat scroll;*/
     padding: 0 0 0;
 }
 
 #page {
-    /*background: #E5E5E5;*/
+    background: #F5F5F5;
     margin: 0 auto;
     min-height: 500px;
     width: 940px;
@@ -111,34 +112,33 @@ h3 {
     min-height: 400px;
     margin: 0 auto;
     padding: 0 0 50px 0;
-/*    display: block;*/
+    /*    display: block;*/
     position: relative;
 }
 
 #top-slider-content {
-/*    margin: 10px;*/
+    /*    margin: 10px;*/
     display: block;
     padding: 10px;
     position: relative;
-/*    z-index: 5;*/
-/*    padding: 10px;*/
-/*    border:1px solid black;*/
+    /*    z-index: 5;*/
+    /*    padding: 10px;*/
+    /*    border:1px solid black;*/
 }
 
 #quote {
     border-top: dashed #828282;
     border-bottom: dashed #828282;
     border-width:1px;
-/*    background-color: #ded9d9;*/
+    /*    background-color: #ded9d9;*/
     width: 800px;
     margin: 0 auto 30px;
     padding: 5px 0;
     text-shadow: 0px 2px 3px #555555;
-/*    display: block;*/
+    /*    display: block;*/
 }
 
 #wrapper {
-    background: #F5F5F5;
     width: 100%;
     min-height: 500px;
     overflow: hidden;

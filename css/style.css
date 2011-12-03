@@ -17,6 +17,54 @@ You should have received a copy of the GNU General Public License
 along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
 */
 
+/* CSSReset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*********************************/
+
 body {
 /*    background: #F5F5F5;*/
     background: #b9b9b9;
@@ -29,39 +77,22 @@ body {
     padding: 0;
 }
 
-/* Anchers */
-
-a {
-    text-decoration:none;
-    color: #333333;
-}
-
-a:hover {
-    color: #DB1010;
-}
-
-/* Paragraph */
-
-p {
-    color: #000000;
-    margin: 0;
-}
-
 /* Headers */
 
-h1 {
-    font-size: 16px;
+h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
+}
+
+h1 {
+    font-size: 1.4em;
 }
 
 h2 {
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 1.2em;
 }
 
 h3 {
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 1.0em;
 }
 
 /* IDs */
@@ -77,67 +108,68 @@ h3 {
     min-height: 500px;
     width: 940px;
     padding: 0 30px 0;
+    position: relative;
 }
 
-#top {
+/* Top Bar */
+
+#top-bar {
     height: 80px;
     padding: 0 0 5px 5px;
-    position: relative;
-    z-index: 200;
 }
 
-#logo {
-    margin-top: 7px;
-    padding: 0 0;
+#top-bar img {
+    position: absolute;
+    top: 8px;
 }
 
-#top-menu {
+#top-bar .menu {
     text-align: left;
     padding: 30px 19px 0 0;
     width: 440px;
 }
 
-#top-menu ul {
-    list-style: none outside none;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
+/* Main Contents */
 
 #main {
     margin: 0 auto;
 }
 
+/* Main Contents: Slider */
+
 #top-slider-main {
     background: url("../images/shadow.png") bottom center no-repeat scroll transparent;
-    min-height: 400px;
     margin: 0 auto;
     padding: 0 0 50px 0;
-    /*    display: block;*/
     position: relative;
 }
 
 #top-slider-content {
-    /*    margin: 10px;*/
     display: block;
     padding: 10px;
     position: relative;
-    /*    z-index: 5;*/
-    /*    padding: 10px;*/
-    /*    border:1px solid black;*/
 }
 
-#quote {
+/* Main Contents: Quote */
+
+blockquote.quote {
     border-top: dashed #828282;
     border-bottom: dashed #828282;
     border-width:1px;
-    /*    background-color: #ded9d9;*/
     width: 800px;
     margin: 0 auto 20px;
     padding: 5px 0;
     text-shadow: 0px 2px 3px #555555;
-    /*    display: block;*/
+    padding: 15px;
 }
+
+blockquote .owner {
+    font-style: italic;
+    font-size: 12px;
+    text-align: left;
+}
+
+
 
 #wrapper {
     width: 100%;
@@ -146,31 +178,34 @@ h3 {
     margin: 0 0 -30px;
 }
 
+/* Sidebar */
+
 #sidebar {
     width: 300px;
     min-height: 400px;
 }
 
-#box-wrapper {
+#sidebar .box-wrapper {
     border: 1px solid #aaaaaa;
     min-height: 120px;
     margin: 15px 0 15px;
+    padding: 10px 15px 0;
 }
 
-#box-title {
-    padding: 10px;
+#sidebar .box-title {
     border-bottom: 1px solid #aaaaaa;
-    display: block;
-    margin: 0 15px 0;
+    text-decoration: none !important;
 }
 
-#box-content {
-    margin: 15px;
-}
-
-#icons {
+#sidebar .icons {
     display: inline-block;
 }
+
+#sidebar p {
+    padding-top: 10px;
+}
+
+/***************************/
 
 #content {
     width: 620px;
@@ -195,21 +230,19 @@ h3[class=box-title] {
     padding: 0 5px 0;
 }
 
-#box-wrapper:first-child {
-    margin-top: 3px !important;
+#sidebar div:first-child {
+    margin-top: 0px !important;
 }
-/* Classes */
+/* Common Classes */
 
 .curved-top {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    position: relative;
 }
 
 .curved-bottom {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px; 
-    position: relative;
 }
 
 .shadow-box {
@@ -229,12 +262,6 @@ h3[class=box-title] {
     float: right;
 }
 
-.owner {
-    font-style: italic;
-    font-size: 12px;
-    text-align: left;
-}
-
 .transparent {
     background: rgba(200, 200, 200, 0.3);
 }
@@ -244,7 +271,3 @@ h3[class=box-title] {
     display: inline;
     margin: 0 5px 15px;
 }
-
-/*.content {
-    margin: 10px;
-}*/

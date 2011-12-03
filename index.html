@@ -27,26 +27,7 @@ along with Mashhad LUG Theme. If not, see <http ://www.gnu.org/licenses/>.
         <link type="text/css" href="css/jquery-ui-1.8.16.custom.css" rel="Stylesheet" />
         <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
-
-        <script type="text/javascript">
-            $("document").ready(function() {
-                makeButtons();
-                $("#tabs").tabs();
-                $("div[id=icons]").hover(
-                function() { $(this).addClass('ui-state-hover'); }, 
-                function() { $(this).removeClass('ui-state-hover'); }
-            );
-                $(function() {
-                    $( "#accordion" ).accordion();
-                });
-            });
-            
-            function makeButtons() {
-                $( "ul[class=mainMenu] a" ).button();
-                $( "ul[class=mainMenu] a" ).click(function() { return false; });
-            }
-        </script>
-
+        <script type="text/javascript" src="js/script.js"></script>
         <title>Mashhad LUG</title>
     </head>
     <body>

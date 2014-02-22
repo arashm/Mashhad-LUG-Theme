@@ -1,0 +1,167 @@
+@import "bourbon/bourbon"
+@import "settings"
+@import "neat/neat"
+
+@include font-face(DroidNaskh, '../fonts/DroidNaskh-Regular', normal)
+@include font-face(DroidNaskh-Bold, '../fonts/DroidNaskh-Bold', bold, bold)
+
+body
+  background: url("../images/tiny_grid.png") repeat fixed
+  font-family: 'DroidNaskh', tahoma, sans-serif
+
+a
+  text-decoration: none
+  color: inherit
+
+  &:hover
+    text-shadow: 0px 2px 0px rgba(171, 171, 171, 0.75)
+
+div.container
+  @include outer-container
+  direction: rtl
+
+header#topbar
+  background: #16a085
+  padding: 5px
+  color: white
+
+  .logo
+    @include span-columns(4)
+
+  nav.menue
+    @include span-columns(8)
+    text-align: left
+    padding-top: 10px
+    ul
+      list-style: none
+    li
+      display: inline-block
+      margin: 0 5px
+
+section.carousel
+  margin: 20px auto
+  text-align: center
+
+header#slang
+  margin-top: 10px
+  text-align: center
+  line-height: 1.3
+  h1
+    font-size: 4em
+    margin: 0 auto
+    font-weight: bold
+    text-shadow: 0px 2px 0px rgba(171, 171, 171, 0.75)
+    color: #c0392b
+  h2
+    font-size: 2em
+    margin: 0 auto
+
+section.next-meeting
+  padding: 10px
+  background: #FFF
+
+  .title
+    @include span-columns(9)
+
+    .next-meeting
+      font-size: 1.7em
+      font-weight: bold
+      text-shadow: 0px 2px 0px rgba(171, 171, 171, 0.75)
+
+    .next-meeting-desc
+      color: gray
+      padding-right: 10px
+      font-size: 1.2em
+
+  .more-info
+    @include span-columns(2)
+    margin: 25px auto
+
+    a
+      padding: 10px
+      border: 0
+      text-align: center
+      border-radius: 4px
+      text-decoration: none
+      background: #e74c3c
+      background-color: #e74c3c
+      -webkit-box-shadow: 0 4px 0 0 darken(#e74c3c, 20%)
+      -moz-box-shadow: 0 4px 0 0 darken(#e74c3c, 20%)
+      box-shadow: 0 4px 0 0 darken(#e74c3c, 20%)
+      width: 160px
+      color: #FFF
+
+section.info
+  background: #27ae60
+  padding: 10px
+  color: white
+
+  .news
+    @include span-columns(8)
+
+    .extend
+      text-align: left
+
+    .arrows
+      padding: 0
+      font-size: 1.5em
+
+  .join
+    @include span-columns(4)
+    text-align: center
+
+    input
+      display: block
+      margin: 7px auto
+
+      &.email
+        dir: ltr
+        text-align: left
+        width: 100%
+        padding: 10px
+
+      &.submit
+        padding: 5px
+        border: 0
+        text-align: center
+        border-radius: 4px
+        text-decoration: none
+        background: #3498db
+        background-color: #3498db
+        -webkit-box-shadow: 0 4px 0 0 darken(#3498db, 20%)
+        -moz-box-shadow: 0 4px 0 0 darken(#3498db, 20%)
+        box-shadow: 0 4px 0 0 darken(#3498db, 20%)
+        width: 100%
+        color: #FFF
+        font-weight: bold
+        font-size: 1.1em
+
+footer#bottom
+  background: #FFF
+  padding: 20px 0 30px 0
+
+  .stats
+    @include span-columns(3)
+    font-size: .7em
+
+  .links
+    @include span-columns(3)
+    font-size: .7em
+
+  .copywrite
+    @include span-columns(3)
+    @include omega()
+    font-size: .7em
+
+  .logo
+    @include span-columns(3)
+    color: gray
+
+
+  .logos
+    @include span-columns(12 of 12)
+    text-align: center
+    font-size: .7em
+    padding-top: 20px
+    img
+      display: inline-block
